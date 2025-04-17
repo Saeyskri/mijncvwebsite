@@ -173,7 +173,7 @@ body {
 
 @media (min-width: 768px) {
 #welcome-section {
- padding-top: 50px;
+ padding-bottom: 50px;
 }
 
 .welcome-text {
@@ -323,7 +323,8 @@ body {
 @media (max-width: 768px) {
     .education-text {
         flex-direction: column;        /* Kolommen onder elkaar op kleinere schermen */
-        align-items: center;           /* Zorgt ervoor dat de inhoud gecentreerd wordt */
+        align-items: center;           
+        margin-bottom: 50px;
     }
 
     .educationleft-column, .educationright-column {
