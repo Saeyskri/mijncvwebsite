@@ -147,7 +147,7 @@ body {
     flex-direction: row;
     align-items: center;
     padding-top: 0;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
 }
 
@@ -166,16 +166,14 @@ body {
 }
 
 @media (max-width: 768px) {
+ #welcome-section {
+ padding-bottom: 100px
+}
   .profile-img {
     width: 60%;
   }
 }
 
-@media (max-width: 768px) {
-#welcome-section {
- padding-bottom: 50px
-}
-}
 .welcome-text {
     display: flex;
     flex-direction: column;
@@ -252,7 +250,7 @@ body {
 
 @media (max-width: 768px) {
     #project-section{
-        padding-bottom: 50px;
+        padding-bottom: 100px;
     }
     .project-container {
         flex-direction: column;     /* Plaatst de afbeeldingen onder elkaar */
@@ -299,7 +297,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 50px;
+        padding-bottom: 50px;
     }
 
  .education-text {
@@ -353,11 +351,6 @@ body {
     padding-top: 200px;
     padding-bottom: 20px;
     }
-}
-
-@media (min-width: 768px) {
-#contact-section {
- padding-top: 50px;
 }
 
 .contact-title {
