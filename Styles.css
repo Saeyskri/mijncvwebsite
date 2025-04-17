@@ -55,14 +55,14 @@ header {
     flex-direction: column;         /* menu-items onder elkaar */
     align-items: center;            /* Centreer de items horizontaal */
     width: 100%;                    /* ul de volledige breedte */
-    padding: 0;                     /* Verwijder eventuele paddings */
-    margin: 0;                      /* Verwijder eventuele marges */
+    padding: 0;                     
+    margin: 0;                      
     list-style: none;               /* bullets niet mee verschuiven */
   }
 
   nav ul li {
     padding: 10px 0;                /* Geef de li's ruimte boven en onder */
-    margin: 0;                      /* Zorg ervoor dat er*/
+    margin: 0;                      
     text-align: center;
   }
   
@@ -73,7 +73,7 @@ header {
   }
 }
 
-/* header 'sectie' */
+/* header section */
 nav {
     width: 100%;
     display: flex;
@@ -119,7 +119,7 @@ body {
 }
 
 
-/* Common styles for sections */
+/* algemene styles for sections */
 .section {
     text-align:center;
     padding: 50px 0;
@@ -147,7 +147,7 @@ body {
     flex-direction: row;
     align-items: center;
     padding-top: 0;
-    padding-bottom: 300px;
+    padding-bottom: 200px;
 }
 }
 
@@ -195,7 +195,7 @@ body {
 
 /*Project section*/
 #project-section{
-    padding-bottom: 300px;
+    padding-bottom: 200px;
 }
 .project-container {
     display: flex;
@@ -250,25 +250,25 @@ body {
         padding-bottom: 0px;
     }
     .project-container {
-        flex-direction: column; /* Plaatst de afbeeldingen onder elkaar */
-        align-items: center; /* Centreert de items */
+        flex-direction: column;     /* Plaatst de afbeeldingen onder elkaar */
+        align-items: center;        /* Centreert de items */
     }
 
     .left-img, .right-img {
-        width: 80%; /* Zorgt ervoor dat de afbeeldingen groter worden */
-        padding: 10px; /* Verlaag de padding voor een betere schaal */
-        max-width: 100%; /* Zorgt ervoor dat de afbeelding niet groter wordt dan de container */
-        height: auto; /* Zorgt ervoor dat de hoogte in verhouding blijft */
+        width: 80%;                 /* Zorgt ervoor dat de afbeeldingen groter worden */
+        padding: 10px;              /* Verlaag de padding voor een betere schaal */
+        max-width: 100%;            /* Zorgt ervoor dat de afbeelding niet groter wordt dan de container */
+        height: auto;               /* Zorgt ervoor dat de hoogte in verhouding blijft */
     }
 
     .left-column, .right-column {
-        width: 80%; /* Vergroot de breedte van de kolommen op mobiele apparaten */
+        width: 80%;                  /* Vergroot de breedte van de kolommen op mobiele apparaten */
         padding: 10px;
         box-sizing: border-box;
     }
 
     .project-text {
-        flex-direction: column; /* Zet tekst ook onder elkaar voor mobiele weergave */
+        flex-direction: column;      /* Zet tekst ook onder elkaar voor mobiele weergave */
         align-items: center;
     }
 }
@@ -299,8 +299,8 @@ body {
  .education-text {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* In plaats van space-between */
-    gap: 20%; /* Tussenruimte tussen de kolommen */
+    justify-content: center; 
+    gap: 20%; 
     align-items: flex-start;
     margin: 5%;
     z-index: 1;
@@ -308,22 +308,22 @@ body {
 
 
     .educationleft-column, .educationright-column {
-        width: 48%; /* Zorgt ervoor dat de kolommen naast elkaar staan */
+        width: 48%; 
         text-align: center;
-        margin-bottom: 0px; /* Voeg marge toe om wat ruimte te creëren tussen de kolommen */
+        margin-bottom: 0px; 
     }
 }
 
-/*Education section op kleinere schermen*/
+/*Education section on mobile*/
 @media (max-width: 768px) {
     .education-text {
-        flex-direction: column; /* Kolommen onder elkaar op kleinere schermen */
-        align-items: center; /* Zorgt ervoor dat de inhoud gecentreerd wordt */
+        flex-direction: column;        /* Kolommen onder elkaar op kleinere schermen */
+        align-items: center;           /* Zorgt ervoor dat de inhoud gecentreerd wordt */
     }
 
     .educationleft-column, .educationright-column {
-        width: 100%; /* Zorgt ervoor dat de kolommen de breedte van de container gebruiken */
-        margin-bottom: 20px; /* Zorgt voor ruimte tussen de kolommen */
+        width: 100%;                   /* Zorgt ervoor dat de kolommen de breedte van de container gebruiken */
+        margin-bottom: 20px;           /* Zorgt voor ruimte tussen de kolommen */
     }
 }
 
@@ -343,7 +343,7 @@ body {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    padding-top: 300px;
+    padding-top: 200px;
     padding-bottom: 20px;
     }
 }
@@ -373,7 +373,7 @@ body {
   justify-content: center;
   gap: 40px;
   margin-top: 30px;
-  flex-wrap: wrap; /* Zorgt dat het mobiel ook netjes blijft */
+  flex-wrap: wrap; 
 }
 
 .contact-icons a {
