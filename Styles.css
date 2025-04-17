@@ -37,6 +37,8 @@ footer {
 header {
     top: 0;
     bottom: auto;
+    height: 60px;
+    display: flex;
 }
 
 /* Hamburger menu algemeen */
@@ -45,24 +47,30 @@ header {
   font-size: 2rem;
   cursor: pointer;
   padding: 10px;
+  color: white;
+  z-index: 1001;
 }
 
-/* Header op mobiel */
+/* Mobiele weergave */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
   }
 
   nav {
-    display: none;                 /* standaard verborgen */
+    display: none;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    top: 60px; /* gelijk aan je header hoogte */
+    left: 0;
     width: 100%;
-    background-color: #f9f9f9;
+    background-color: #333; /* zelfde als header */
+    z-index: 999;
   }
 
   nav.open {
-    display: flex;                /* toon bij toggle */
+    display: flex;
   }
 
   nav ul {
@@ -84,6 +92,7 @@ header {
     display: block;
     width: 100%;
     text-align: center;
+    color: white; /* zichtbaar op donkere achtergrond */
   }
 }
 
