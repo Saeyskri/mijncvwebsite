@@ -320,6 +320,9 @@ body {
 
 /*Education section on mobile*/
 @media (max-width: 768px) {
+   #education-section{
+    padding-bottom: 100px;
+   }
    .education-text {
         flex-direction: column;        /* Kolommen onder elkaar op kleinere schermen */
         align-items: center;           
