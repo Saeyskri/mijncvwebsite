@@ -171,9 +171,9 @@ body {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 #welcome-section {
- padding-bottom: 50px;
+ padding-bottom: 50px
 }
 
 .welcome-text {
@@ -200,7 +200,7 @@ body {
 
 /*Project section*/
 #project-section{
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
 .project-container {
     display: flex;
@@ -299,6 +299,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 50px;
     }
 
  .education-text {
@@ -312,7 +313,7 @@ body {
 }
 
 
-    .educationleft-column, .educationright-column {
+   .educationleft-column, .educationright-column {
         width: 48%; 
         text-align: center;
         margin-bottom: 0px; 
@@ -321,7 +322,7 @@ body {
 
 /*Education section on mobile*/
 @media (max-width: 768px) {
-    .education-text {
+   .education-text {
         flex-direction: column;        /* Kolommen onder elkaar op kleinere schermen */
         align-items: center;           
         margin-bottom: 50px;
