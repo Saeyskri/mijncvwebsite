@@ -51,26 +51,29 @@ header {
   z-index: 1001;
 }
 
-/* Mobiele weergave */
+/* Mobiel menu */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
   }
 
   nav {
-    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 60px; /* gelijk aan je header hoogte */
+    top: 60px; /* hoogte van header */
     left: 0;
     width: 100%;
-    background-color: #333; /* zelfde als header */
+    background-color: #333;
     z-index: 999;
   }
 
   nav.open {
-    display: flex;
+    max-height: 500px; /* groot genoeg voor je menu */
+    transition: max-height 0.4s ease-in;
   }
 
   nav ul {
@@ -92,7 +95,7 @@ header {
     display: block;
     width: 100%;
     text-align: center;
-    color: white; /* zichtbaar op donkere achtergrond */
+    color: white;
   }
 }
 
