@@ -39,37 +39,51 @@ header {
     bottom: auto;
 }
 
-/* Header on mobile */
+/* Hamburger menu algemeen */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Header op mobiel */
 @media (max-width: 768px) {
-    nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;        /* Zorg dat nav-structuur gecentreerd wordt */
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;                 /* standaard verborgen */
+    flex-direction: column;
     align-items: center;
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+
+  nav.open {
+    display: flex;                /* toon bij toggle */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     padding: 0;
     margin: 0;
-    text-align: center;
-  }
-    
-  nav ul {
-    flex-direction: column;         /* menu-items onder elkaar */
-    align-items: center;            /* Centreer de items horizontaal */
-    width: 100%;                    /* ul de volledige breedte */
-    padding: 0;                     
-    margin: 0;                      
-    list-style: none;               /* bullets niet mee verschuiven */
+    list-style: none;
   }
 
   nav ul li {
-    padding: 10px 0;                /* Geef de li's ruimte boven en onder */
-    margin: 0;                      
+    padding: 10px 0;
+    width: 100%;
     text-align: center;
   }
-  
+
   nav ul li a {
     display: block;
     width: 100%;
-    text-align: center;             /*tekst gecentreerd*/
+    text-align: center;
   }
 }
 
