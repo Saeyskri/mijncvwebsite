@@ -197,9 +197,23 @@ Tot slot is CI/CD voor de front end opgezet via Azure static web app en GitHub-r
   const toggleBtn = document.getElementById("menu-toggle");
   const navMenu = document.getElementById("mobile-menu");
 
+  // Menu openen bij klikken op hamburger
   toggleBtn.addEventListener("click", () => {
     navMenu.classList.toggle("open");
   });
+
+  // Menu automatisch sluiten na het kiezen van een menu-item
+  function closeMenu() {
+    navMenu.classList.remove("open");
+  }
+
+  // Sluit het menu als een link wordt aangeklikt
+  document.querySelectorAll("#mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      closeMenu();
+    });
+  });
 </script>
+
 </body>
 </html>
