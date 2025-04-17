@@ -168,6 +168,7 @@ body {
 @media (max-width: 768px) {
   .profile-img {
     width: 60%;
+    padding-bottom: 100px;
   }
 }
 
@@ -240,14 +241,14 @@ body {
     background: 
         linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 30%),
         linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 30%),
-        url('https://raw.githubusercontent.com/Saeyskri/sitestuff/refs/heads/main/3254926.jpg') no-repeat center center;
+        url('https://raw.githubusercontent.com/Saeyskri/sitestuff/refs/heads/main/3254926upsidedown.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
 }
 
 @media (max-width: 768px) {
     #project-section{
-        padding-bottom: 0px;
+        padding-bottom: 100px;
     }
     .project-container {
         flex-direction: column;     /* Plaatst de afbeeldingen onder elkaar */
@@ -332,7 +333,7 @@ body {
      background: 
         linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 30%),
         linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 30%),
-        url('https://raw.githubusercontent.com/Saeyskri/sitestuff/refs/heads/main/3254926.jpg') no-repeat center center;
+        url('https://raw.githubusercontent.com/Saeyskri/sitestuff/refs/heads/main/3254926upsidedown.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
 }
@@ -403,7 +404,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-bottom: 80px;
+    padding-top: 100px;
   }
 }
 
