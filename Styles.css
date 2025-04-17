@@ -64,9 +64,9 @@ header {
 
   /* Nav-menu (standaard gesloten) */
   nav {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.4s ease-out;
+    overflow: hidden; 
+    height: 0; /* Zorgt ervoor dat het menu gesloten is als de class .open niet aanwezig is */
+    transition: height 0.4s ease-out;
     flex-direction: column;
     align-items: center;
     position: absolute;
@@ -79,8 +79,8 @@ header {
 
   /* Als nav-menu open is, wordt de hoogte vergroot */
   nav.open {
-    max-height: 500px; /* Groot genoeg voor het menu */
-    transition: max-height 0.4s ease-in;
+    height: auto; /* Zorgt ervoor dat het menu de hoogte van de inhoud aanneemt */
+    transition: height 0.4s ease-in;
   }
 
   nav ul {
