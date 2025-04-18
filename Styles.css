@@ -232,6 +232,10 @@ body {
 }
 
 /*project section*/
+#project-section{
+    padding-bottom: 50px;
+}
+
 .section.projects {
     background: 
         linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 30%),
@@ -275,6 +279,7 @@ body {
   .project-wrapper {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 100px;
   }
 
   .project-block {
