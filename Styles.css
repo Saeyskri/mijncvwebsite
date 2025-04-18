@@ -232,85 +232,58 @@ body {
 }
 
 
-/*Project section*/
-#project-section{
-    padding-bottom: 50px;
-}
-.project-container {
-    display: flex;
-    flex-direction: row;        /*Standaard naast elkaar */
-    justify-content: space-around;
-    width: 100%;
+.project-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.left-img, .right-img {
-    width: 40%;
-    height: auto;
-    border-radius: 10px;
-    padding: 20px;              /* Verminder padding om meer ruimte te geven */
-    box-sizing: border-box;
-    max-width: 100%;
+.project-block {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255,255,255,0.03);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .project-text {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
+  text-align: center;
 }
 
-.left-column, .right-column {
-    width: 48%;
-    padding: 20px;
-    position: relative;
-}
-
-.left-column {
-    text-align: center;
-}
-
-.right-column {
-    text-align: center;
-}
-
-/*Project section on mobile*/
-.section.projects {
-    background: 
-        linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 30%),
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 30%),
-        url('https://raw.githubusercontent.com/Saeyskri/sitestuff/refs/heads/main/3254926upsidedown.jpg') no-repeat center center;
-    background-size: cover;
-    position: relative;
-}
-
+/* Mobiel weergave */
 @media (max-width: 768px) {
-    #project-section{
-        padding-bottom: 100px;
-    }
-    .project-container {
-        flex-direction: column;     /* Plaatst de afbeeldingen onder elkaar */
-        align-items: center;        /* Centreert de items */
-    }
+  .project-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .left-img, .right-img {
-        width: 80%;                 /* Zorgt ervoor dat de afbeeldingen groter worden */
-        padding: 10px;              /* Verlaag de padding voor een betere schaal */
-        max-width: 100%;            /* Zorgt ervoor dat de afbeelding niet groter wordt dan de container */
-        height: auto;               /* Zorgt ervoor dat de hoogte in verhouding blijft */
-    }
+  .project-block {
+    width: 90%;
+    padding: 10px;
+  }
 
-    .left-column, .right-column {
-        width: 80%;                  /* Vergroot de breedte van de kolommen op mobiele apparaten */
-        padding: 10px;
-        box-sizing: border-box;
-    }
+  .project-img {
+    width: 100%;
+    padding: 0;
+  }
 
-    .project-text {
-        flex-direction: column;      /* Zet tekst ook onder elkaar voor mobiele weergave */
-        align-items: center;
-    }
+  .project-text {
+    width: 100%;
+    text-align: center;
+  }
 }
+
 
 /*Education section */
 .section.education {
