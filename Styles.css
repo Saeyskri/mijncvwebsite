@@ -55,50 +55,59 @@ header {
     background-color: transparent;
 }
 
-/* Mobiel menu */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    margin-left: 10px;
-  }
 
-  #mobile-menu {
-    position: absolute;
-    top: 60px; /* net onder de header */
-    left: 0; /* aan de linkerkant */
-    width: 60%; /* neemt 60% van de breedte in */
-    background-color: #333;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.4s ease-out;
-    z-index: 999;
-  }
-
-  #mobile-menu.open {
-    max-height: 500px; /* voldoende hoogte voor alle items */
-    transition: max-height 0.4s ease-in;
-  }
-
-  #mobile-menu ul {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  #mobile-menu ul li {
-    padding: 12px 20px;
-    width: 100%;
-  }
-
-  #mobile-menu ul li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    width: 100%;
-  }
+/* Hamburger zichtbaar op alle schermen */
+.menu-toggle {
+  display: block;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  z-index: 1001;
+  background-color: transparent;
+  margin-left: 10px;
 }
+
+/* Vast menu links onder de header */
+#mobile-menu {
+  position: fixed;
+  top: 60px; /* onder de header */
+  left: 0;
+  width: 220px;
+  background-color: #333;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  z-index: 999;
+  border-right: 2px solid #222;
+}
+
+/* Wanneer menu open is */
+#mobile-menu.open {
+  max-height: 100vh; /* volle hoogte van het scherm */
+  transition: max-height 0.3s ease-in;
+}
+
+/* Menu lijst */
+#mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-menu ul li {
+  padding: 12px 20px;
+  border-bottom: 1px solid #444;
+}
+
+#mobile-menu ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
 
 /* Header sectie (standaard layout) */
 nav {
