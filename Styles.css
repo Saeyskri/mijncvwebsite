@@ -258,9 +258,10 @@ body {
 }
 
 /* Medium schermen (vanaf ± 768px) */
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px){
   .project-wrapper {
     flex-direction: row;
+    flew-wrap: wrap;
     justify-content: center;
     gap: 30px;
   }
