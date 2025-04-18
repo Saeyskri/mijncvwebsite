@@ -257,6 +257,18 @@ body {
   }
 }
 
+/* Medium schermen (vanaf ± 768px) */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .project-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .project-block {
+    width: 45%;
+  }
+}
 
 /*Education section */
 .section.education {
