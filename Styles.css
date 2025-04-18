@@ -276,10 +276,12 @@ body {
 
 /* Mobiel weergave */
 @media (max-width: 768px) {
+ #project-section{
+  padding-bottom: 100px;
+ }
   .project-wrapper {
     flex-direction: column;
     align-items: center;
-    padding-bottom: 100px;
   }
 
   .project-block {
