@@ -57,52 +57,46 @@ header {
 
 /* Mobiel menu */
 @media (max-width: 768px) {
-  /* Hamburger menu zichtbaar op mobiel */
   .menu-toggle {
     display: block;
+    margin-left: 10px;
   }
 
-  /* Nav-menu (standaard gesloten) */
-  nav {
-    overflow: hidden; 
-    height: 0; /* Zorgt ervoor dat het menu gesloten is als de class .open niet aanwezig is */
-    transition: height 0.4s ease-out;
-    flex-direction: column;
-    align-items: center;
+  #mobile-menu {
     position: absolute;
-    top: 60px; /* Zorg dat het menu onder de header verschijnt */
-    left: 0;
-    width: 100%;
+    top: 60px; /* net onder de header */
+    left: 0; /* aan de linkerkant */
+    width: 60%; /* neemt 60% van de breedte in */
     background-color: #333;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
     z-index: 999;
   }
 
-  /* Als nav-menu open is, wordt de hoogte vergroot */
-  nav.open {
-    height: auto; /* Zorgt ervoor dat het menu de hoogte van de inhoud aanneemt */
-    transition: height 0.4s ease-in;
+  #mobile-menu.open {
+    max-height: 500px; /* voldoende hoogte voor alle items */
+    transition: max-height 0.4s ease-in;
   }
 
-  nav ul {
+  #mobile-menu ul {
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    align-items: flex-start;
     padding: 0;
     margin: 0;
     list-style: none;
   }
 
-  nav ul li {
-    padding: 10px 0;
+  #mobile-menu ul li {
+    padding: 12px 20px;
     width: 100%;
-    text-align: center;
   }
 
-  nav ul li a {
+  #mobile-menu ul li a {
+    color: white;
+    text-decoration: none;
     display: block;
     width: 100%;
-    text-align: center;
-    color: white;
   }
 }
 
