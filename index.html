@@ -59,7 +59,7 @@
 
     <div class="project-wrapper">
 
-      <!-- Linker blok -->
+      
       <div class="project-block">
         <img src="https://raw.githubusercontent.com/Saeyskri/sitestuff/refs/heads/main/471615703_1177854450922805_6586506645644544553_n.jpg" class="project-img">
         <div class="project-text">
@@ -76,7 +76,7 @@
         </div>
       </div>
 
-      <!-- Rechter blok -->
+      
       <div class="project-block">
         <img src="https://github.com/Saeyskri/sitestuff/blob/main/IMG-20171004-WA0018%20(1).jpg?raw=true" class="project-img">
         <div class="project-text">
@@ -202,17 +202,17 @@
   const toggleBtn = document.getElementById("menu-toggle");
   const navMenu = document.getElementById("mobile-menu");
 
-  // Menu openen bij klikken op hamburger
+  
   toggleBtn.addEventListener("click", () => {
     navMenu.classList.toggle("open");
   });
 
-  // Menu automatisch sluiten na het kiezen van een menu-item
+  
   function closeMenu() {
     navMenu.classList.remove("open");
   }
 
-  // Sluit het menu als een link wordt aangeklikt
+  
   document.querySelectorAll("#mobile-menu a").forEach(link => {
     link.addEventListener("click", () => {
       closeMenu();
