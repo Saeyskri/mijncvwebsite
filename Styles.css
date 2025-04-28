@@ -56,7 +56,7 @@ footer {
 /* Vast menu links onder de header */
 #mobile-menu {
     position: fixed;
-    top: 60px; /* onder de header */
+    top: 60px;
     left: 0;
     width: 220px;
     background-color: #333;
@@ -93,7 +93,7 @@ footer {
     display: block;
 }
 
-/* Optioneel: hover-effect */
+
 #mobile-menu ul li:hover {
     background-color: #444;
     cursor: pointer;
@@ -112,7 +112,7 @@ body {
 }
 
 
-/* algemene styles for sections */
+/* algemene stijlen voor secties */
 .section {
     text-align:center;
     padding: 50px 0;
@@ -124,7 +124,7 @@ body {
     position: relative;
 }
 
-/*Welcome Section */
+/*Welcome Sectie */
 .section.welcome {
     background: 
         linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 30%),
@@ -188,7 +188,7 @@ body {
     margin: 20px;
 }
 
-/*project section*/
+/*project sectie*/
 #project-section{
     padding-bottom: 50px;
 }
@@ -231,7 +231,7 @@ body {
   text-align: center;
 }
 
-/* Mobiel weergave */
+/* Project sectie op Mobile */
 @media (max-width: 768px) {
  #project-section{
   padding-bottom: 100px;
@@ -271,7 +271,7 @@ body {
   }
 }
 
-/*Education section */
+/*Education sectie */
 .section.education {
      background: 
         linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 30%),
@@ -286,7 +286,7 @@ body {
     margin-top: 10px;
 }
 
-/*Education section op grote schermen */
+/*Education sectie op grote schermen */
 @media (min-width: 768px) {
     #education-section {
         display: flex;
@@ -313,24 +313,24 @@ body {
     }
 }
 
-/*Education section on mobile*/
+/*Education sectie op mobile*/
 @media (max-width: 768px) {
    #education-section{
     padding-bottom: 100px;
    }
    .education-text {
-        flex-direction: column;        /* Kolommen onder elkaar op kleinere schermen */
+        flex-direction: column;        
         align-items: center;           
         margin-bottom: 50px;
     }
 
     .educationleft-column, .educationright-column {
-        width: 100%;                   /* Zorgt ervoor dat de kolommen de breedte van de container gebruiken */
-        margin-bottom: 20px;           /* Zorgt voor ruimte tussen de kolommen */
+        width: 100%;                   
+        margin-bottom: 20px;           
     }
 }
 
-/*Contact Section*/
+/*Contact Sectie*/
 .section.contact {
      background: 
         linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 30%),
@@ -398,7 +398,7 @@ body {
 }
 
 
-/* contact section on mobile */
+/* contact sectie op mobile */
 @media (max-width: 767px) {
   .contact-container,
   .contact-text {
