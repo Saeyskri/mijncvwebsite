@@ -186,7 +186,7 @@
   <div id="visitor-count">Bezoekers: laden...</div>
 
   <script>
-    fetch("https://visitcounter-functie.azurewebsites.net/api/UpdateVisitorCount")
+    fetch("https://visitcounter-functie.azurewebsites.net/api/UpdateVisitorCount2")
       .then(response => response.json())
       .then(data => {
         document.getElementById("visitor-count").innerText = "Aantal bezoekers: " + data.count;
